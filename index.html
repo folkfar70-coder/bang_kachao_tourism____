@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>บางกระเจ้า | BANG KRACHAO — เที่ยวสมุทรปราการ</title>
+<meta name="description" content="เว็บไซต์แนะนำการท่องเที่ยวบางกระเจ้า สมุทรปราการ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--g:#174d39;--g2:#2d7655;--lime:#a8c686;--cream:#f8f4e9;--ink:#163329;--muted:#65756e;--white:#fff;--gold:#d3a548}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Kanit,sans-serif;color:var(--ink);background:#fbfcf9;line-height:1.75}a{text-decoration:none;color:inherit}
+nav{position:fixed;z-index:30;top:0;width:100%;padding:14px 5%;display:flex;justify-content:space-between;align-items:center;color:#fff;background:linear-gradient(#0d3024cc,transparent);transition:.3s}
+nav.scrolled{background:#123d2e;box-shadow:0 5px 20px #0002}.brand{font-weight:700;letter-spacing:.5px}.brand span{color:var(--lime)}
+.navlinks{display:flex;gap:25px;font-size:.95rem}.navlinks a:hover{color:#cfe7bd}
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;color:#fff;background:#173c2d}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.48}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#092c20dd 0%,#123f2daa 45%,#123f2d22 100%)}
+.hero-content{position:relative;z-index:2;max-width:1180px;width:100%;margin:auto;padding:120px 6% 80px}
+.kicker{letter-spacing:3px;font-size:.85rem;color:#d4e7c5}.hero h1{font-family:"Playfair Display",serif;font-size:clamp(4rem,10vw,8.5rem);line-height:.88;margin:18px 0;max-width:800px}.hero h1 small{display:block;font-family:Kanit,sans-serif;font-size:clamp(1.3rem,3vw,2rem);line-height:1.2;font-weight:400;margin-top:25px;letter-spacing:1px}
+.hero p{max-width:620px;font-size:1.15rem;color:#eef6ef}.btn{display:inline-block;padding:12px 20px;border-radius:999px;margin:15px 8px 0 0;font-weight:600}.btn-main{background:#e7c46b;color:#203d2e}.btn-ghost{border:1px solid #ffffff88;color:#fff}
+section{padding:95px 6%}.wrap{max-width:1180px;margin:auto}.section-head{max-width:720px;margin-bottom:45px}.eyebrow{color:var(--g2);font-weight:600;letter-spacing:2px;font-size:.82rem}.section-head h2{font-family:"Playfair Display",serif;font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.05;margin:8px 0}.section-head p{color:var(--muted);font-size:1.05rem}
+.about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:stretch}.about-text{font-size:1.08rem}.quote{padding:35px;background:var(--g);color:#fff;border-radius:28px;display:flex;flex-direction:column;justify-content:center}.quote strong{font-size:3.5rem;color:#d6e9c4;line-height:1}.quote p{font-size:1.15rem}
+.places{background:#fff}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}.card{border-radius:26px;overflow:hidden;background:#fff;border:1px solid #e8eee9;box-shadow:0 12px 40px #174d3912}.photo{height:310px;position:relative;overflow:hidden;background:#dce9df}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s}.card:hover img{transform:scale(1.05)}.photo .label{position:absolute;left:18px;top:18px;background:#fffdf0e8;color:var(--g);padding:5px 12px;border-radius:999px;font-size:.8rem;font-weight:600}.body{padding:24px 25px 28px}.body h3{font-size:1.55rem;margin:0 0 7px}.body p{color:var(--muted);margin:0 0 15px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{font-size:.78rem;background:#edf5eb;color:var(--g2);padding:4px 10px;border-radius:999px}
+.activity{background:#f2f7f0}.acts{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.act{background:#fff;border-radius:22px;padding:28px 20px;text-align:center;box-shadow:0 8px 25px #174d3910}.act-icon{font-size:2.6rem}.act h3{margin:7px 0}.act p{color:var(--muted);font-size:.92rem}
+.route{background:var(--g);color:#fff}.route .section-head p{color:#cfe1d6}.route-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.route-card{border:1px solid #ffffff2b;border-radius:24px;padding:28px;background:#ffffff0c}.route-card h3{margin-top:0;font-size:1.35rem}.route-card li{margin:13px 0;color:#e4efe9}
+.itinerary{background:#fff}.days{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.day{border-top:5px solid var(--gold);background:var(--cream);padding:25px;border-radius:18px}.day h3{margin-top:0}.day p{color:var(--muted)}
+.sources{background:#f5f8f4}.source-list{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.source{background:#fff;padding:18px;border-radius:15px}.source a{color:var(--g2);font-weight:600}
+footer{background:#0b271d;color:#cddfd6;padding:40px 6%}.footer-grid{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:25px}.credit{font-size:.8rem;color:#94aaa1;max-width:700px}
+@media(max-width:850px){.navlinks{display:none}.about-grid,.route-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.acts{grid-template-columns:repeat(2,1fr)}.days,.source-list{grid-template-columns:1fr}.hero h1{font-size:4.6rem}}
+@media(max-width:520px){section{padding:70px 5%}.acts{grid-template-columns:1fr}.photo{height:250px}.hero h1{font-size:3.8rem}.hero-content{padding-left:5%;padding-right:5%}}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <a class="brand" href="#top">BANG KRACHAO <span>•</span> บางกระเจ้า</a>
+  <div class="navlinks"><a href="#about">รู้จักบางกระเจ้า</a><a href="#places">สถานที่</a><a href="#activities">กิจกรรม</a><a href="#route">การเดินทาง</a><a href="#plan">1 Day Trip</a></div>
+</nav>
+
+<header class="hero" id="top">
+  <img class="hero-img" src="https://1.bp.blogspot.com/-XlYU7IeLUSg/XjBTjiGIGaI/AAAAAAAADKE/Hf_sGXGYCmEeOQ_jyI4xCL54aARdIUH-wCLcBGAsYHQ/s1600/%25E0%25B8%25AA%25E0%25B8%25A7%25E0%25B8%2599%25E0%25B8%25B2%25E0%25B8%2598%25E0%25B8%25B2%25E0%25B8%25A3%25E0%25B8%2593%25E0%25B8%25B0%25E0%25B9%2581%25E0%25B8%25A5%25E0%25B8%25B0%25E0%25B8%25AA%25E0%25B8%25A7%25E0%25B8%2599%25E0%25B8%9E%25E0%25B8%25A4%25E0%25B8%81%25E0%25B8%25A9%25E0%25B8%8A%25E0%25B8%25B2%25E0%25B8%95%25E0%25B8%25B4%25E0%25B8%25A8%25E0%25B8%25A3%25E0%25B8%25B5%25E0%25B8%2599%25E0%25B8%2584%25E0%25B8%25A3%25E0%25B9%2580%25E0%25B8%82%25E0%25B8%25B7%25E0%25B9%2588%25E0%25B8%2599%25E0%25B8%98%25E0%25B8%25B1%25E0%25B8%2599%25E0%25B8%98%25E0%25B9%258C.jpg" alt="สวนศรีนครเขื่อนขันธ์ บางกระเจ้า">
+  <div class="hero-content">
+    <div class="kicker">SAMUT PRAKAN • GREEN ESCAPE NEAR BANGKOK</div>
+    <h1>บางกระเจ้า<small>พื้นที่สีเขียวริมเจ้าพระยา ที่ชวนให้เราเที่ยวช้าลง</small></h1>
+    <p>คู่มือท่องเที่ยวคุ้งบางกระเจ้า รวมธรรมชาติ ตลาด วัด ความศรัทธา การปั่นจักรยาน และการเดินทางทางเรือไว้ในเว็บไซต์เดียว</p>
+    <a class="btn btn-main" href="#places">สำรวจสถานที่</a>
+    <a class="btn btn-ghost" href="#route">วางแผนการเดินทาง</a>
+  </div>
+</header>
+
+<section class="about" id="about">
+<div class="wrap">
+  <div class="section-head"><div class="eyebrow">ABOUT</div><h2>ทำไมต้อง “บางกระเจ้า”?</h2><p>คุ้งบางกระเจ้าอยู่ในอำเภอพระประแดง จังหวัดสมุทรปราการ เป็นพื้นที่สีเขียวใกล้กรุงเทพฯ ที่ผสมผสานสวน คลอง ชุมชน และวัฒนธรรมเข้าด้วยกัน</p></div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>พื้นที่คุ้งบางกระเจ้าครอบคลุม 6 ตำบล ได้แก่ บางกระเจ้า บางกอบัว บางน้ำผึ้ง บางกระสอบ ทรงคนอง และบางยอ จึงมีทั้งวิถีชีวิตริมคลอง พื้นที่เกษตร และแหล่งท่องเที่ยวที่สามารถเชื่อมต่อกันด้วยจักรยาน</p>
+      <p>สวนสาธารณะและสวนพฤกษชาติศรีนครเขื่อนขันธ์เป็นหนึ่งในจุดเด่นของพื้นที่ มีธรรมชาติร่มรื่น เส้นทางจักรยาน และหอดูนก เหมาะกับการพักผ่อนและเรียนรู้ระบบนิเวศ</p>
+    </div>
+    <div class="quote"><strong>148</strong><p>ไร่ของสวนสาธารณะและสวนพฤกษชาติศรีนครเขื่อนขันธ์ — หนึ่งในพื้นที่สีเขียวสำคัญของคุ้งบางกระเจ้า</p></div>
+  </div>
+</div>
+</section>
+
+<section class="places" id="places">
+<div class="wrap">
+  <div class="section-head"><div class="eyebrow">REAL PLACES</div><h2>จุดหมายที่ไม่ควรพลาด</h2><p>ใช้ภาพสถานที่จริงจากแหล่งออนไลน์ และระบุแหล่งที่มาสำหรับภาพที่มีข้อมูลลิขสิทธิ์ชัดเจน</p></div>
+  <div class="cards">
+    <article class="card"><div class="photo"><img loading="lazy" src="https://1.bp.blogspot.com/-XlYU7IeLUSg/XjBTjiGIGaI/AAAAAAAADKE/Hf_sGXGYCmEeOQ_jyI4xCL54aARdIUH-wCLcBGAsYHQ/s1600/%25E0%25B8%25AA%25E0%25B8%25A7%25E0%25B8%2599%25E0%25B8%25AA%25E0%25B8%25B2%25E0%25B8%2598%25E0%25B8%25B2%25E0%25B8%25A3%25E0%25B8%2593%25E0%25B8%25B0%25E0%25B9%2581%25E0%25B8%25A5%25E0%25B8%25B0%25E0%25B8%25AA%25E0%25B8%25A7%25E0%25B8%2599%25E0%25B8%259E%25E0%25B8%25A4%25E0%25B8%81%25E0%25B8%25A9%25E0%25B8%8A%25E0%25B8%25B2%25E0%25B8%95%25E0%25B8%25B4%25E0%25B8%25A8%25E0%25B8%25A3%25E0%25B8%25B5%25E0%25B8%2599%25E0%25B8%84%25E0%25B8%25A3%25E0%25B9%2580%25E0%25B8%82%25E0%25B8%25B7%25E0%25B9%2588%25E0%25B8%2599%25E0%25B8%98%25E0%25B1%2599%25E0%25B8%2599%25E0%25B8%98%25E0%25B9%258C.jpg" alt="สวนศรีนครเขื่อนขันธ์"><span class="label">ธรรมชาติ</span></div><div class="body"><h3>สวนศรีนครเขื่อนขันธ์</h3><p>สวนสาธารณะและสวนพฤกษชาติขนาด 148 ไร่ มีทางเดิน ทางจักรยาน สระน้ำ และหอดูนก เหมาะกับการเริ่มต้นทริป</p><div class="chips"><span class="chip">ปั่นจักรยาน</span><span class="chip">ดูนก</span><span class="chip">ถ่ายรูป</span></div></div></article>
+
+    <article class="card"><div class="photo"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Bang_Nam_Phueng,_Phra_Pradaeng_District,_Samut_Prakan,_Thailand_-_panoramio_(2).jpg" alt="ตลาดน้ำบางน้ำผึ้ง"><span class="label">ชุมชน</span></div><div class="body"><h3>ตลาดน้ำบางน้ำผึ้ง</h3><p>ตลาดชุมชนที่เกิดจากความร่วมมือของคนในพื้นที่ มีอาหาร ของฝาก และสินค้าท้องถิ่น เหมาะกับการแวะกินและเดินเล่น</p><div class="chips"><span class="chip">อาหาร</span><span class="chip">ของฝาก</span><span class="chip">วิถีชุมชน</span></div></div></article>
+
+    <article class="card"><div class="photo"><img loading="lazy" src="https://s359.kapook.com/pagebuilder/8c81bf6f-e1de-4846-88d0-a35e7c1f0ba6.jpg" alt="มหาเทวลัยพระพิฆเนศ"><span class="label">ศรัทธา</span></div><div class="body"><h3>มหาเทวลัย พระพิฆเนศ</h3><p>สถานที่สักการะพระพิฆเนศปางมหาราชาในคุ้งบางกระเจ้า เป็นอีกจุดหมายด้านความเชื่อและวัฒนธรรมที่นักท่องเที่ยวแวะเยี่ยมชม</p><div class="chips"><span class="chip">ไหว้พระพิฆเนศ</span><span class="chip">วัฒนธรรม</span><span class="chip">ถ่ายภาพ</span></div></div></article>
+
+    <article class="card"><div class="photo"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Wat_Bang_Nam_Phueng_Nok_3.jpg" alt="วัดบางน้ำผึ้งนอก"><span class="label">ประวัติศาสตร์</span></div><div class="body"><h3>วัดบางน้ำผึ้งนอก</h3><p>วัดเก่าแก่ริมแม่น้ำเจ้าพระยา มีอาคารและงานศิลปกรรมที่เชื่อมโยงกับประวัติศาสตร์ของพื้นที่ เหมาะกับการไหว้พระและชมบรรยากาศริมน้ำ</p><div class="chips"><span class="chip">ไหว้พระ</span><span class="chip">สถาปัตยกรรม</span><span class="chip">ริมแม่น้ำ</span></div></div></article>
+
+    <article class="card"><div class="photo"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Wat_Khlong_Toei_Nok_01.JPG" alt="วัดคลองเตยนอก"><span class="label">ทางเรือ</span></div><div class="body"><h3>วัดคลองเตยนอก</h3><p>จุดเชื่อมต่อสำคัญจากฝั่งคลองเตยสำหรับการเดินทางทางเรือเข้าสู่บางกระเจ้า เหมาะกับการเริ่มทริปแบบนั่งเรือข้ามแม่น้ำ</p><div class="chips"><span class="chip">เรือข้ามฟาก</span><span class="chip">ริมเจ้าพระยา</span><span class="chip">เริ่มทริป</span></div></div></article>
+    <article class="card"><div class="photo"><img loading="lazy" src="https://www.dasta.or.th/uploads/article/202309/1695787529_bd7e5df16dec811f49cf.jpg" alt="บ้านกลางสวน บางกอบัว"><span class="label">ชุมชน</span></div><div class="body"><h3>บ้านกลางสวน บางกอบัว</h3><p>จุดท่องเที่ยวชุมชนในตำบลบางกอบัว บรรยากาศบ้านสวนร่มรื่น มีกิจกรรมล่องเรือชมธรรมชาติและสัมผัสวิถีชีวิตริมคลอง</p><div class="chips"><span class="chip">ล่องเรือ</span><span class="chip">วิถีชุมชน</span><span class="chip">บ้านสวน</span></div></div></article>
+  </div>
+</div>
+</section>
+
+<section class="activity" id="activities"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">THINGS TO DO</div><h2>กิจกรรมในบางกระเจ้า</h2></div>
+  <div class="acts">
+    <div class="act"><div class="act-icon">🚲</div><h3>ปั่นจักรยาน</h3><p>ปั่นตามเส้นทางในสวนและชุมชน ชมคลองและพื้นที่สีเขียว</p></div>
+    <div class="act"><div class="act-icon">🦜</div><h3>ดูนก</h3><p>แวะหอดูนกในสวนศรีนครเขื่อนขันธ์ โดยเฉพาะช่วงเช้าและเย็น</p></div>
+    <div class="act"><div class="act-icon">🍜</div><h3>ชิมของท้องถิ่น</h3><p>เดินตลาดน้ำ ลองอาหาร และอุดหนุนผลิตภัณฑ์ของชุมชน</p></div>
+    <div class="act"><div class="act-icon">🙏</div><h3>ไหว้พระ–ขอพร</h3><p>เชื่อมเส้นทางวัดบางน้ำผึ้งนอกกับมหาเทวลัยพระพิฆเนศ</p></div>
+    <div class="act"><div class="act-icon">🏡</div><h3>บ้านกลางสวน</h3><p>สัมผัสวิถีชุมชน ล่องเรือชมธรรมชาติ และเรียนรู้กิจกรรมท้องถิ่น</p></div>
+
+  </div>
+</div></section>
+
+<section class="route" id="route"><div class="wrap">
+  <div class="section-head"><div class="eyebrow" style="color:#b9d9bc">GETTING THERE</div><h2>การเดินทาง</h2><p>เส้นทางหลักเข้าสู่บางกระเจ้ามีทั้งเรือ รถยนต์ และการต่อรถจาก BTS</p></div>
+  <div class="route-grid">
+    <div class="route-card"><h3>⛴️ เรือข้ามฟาก</h3><ul><li><b>วัดบางนานอก → วัดบางน้ำผึ้งนอก</b> เหมาะกับผู้มาจากฝั่งบางนา</li><li><b>วัดคลองเตยนอก → ท่ากำนันขาว</b> เป็นเส้นทางจากฝั่งคลองเตย</li><li><b>พระราม 3 → คลองลัดโพธิ์</b> อีกทางเลือกเข้าสู่พื้นที่คุ้งบางกระเจ้า</li></ul></div>
+    <div class="route-card"><h3>🚆 BTS + ต่อรถ</h3><ul><li>ลง <b>BTS บางนา</b> แล้วต่อไปท่าเรือวัดบางนานอก</li><li>ข้ามเรือไปวัดบางน้ำผึ้งนอก แล้วเช่าจักรยานเที่ยวต่อ</li><li>ร้านเช่าจักรยานมีหลายจุด โดยเฉพาะบริเวณตลาดและทางเข้าสถานที่ท่องเที่ยว</li></ul></div>
+  </div>
+</div></section>
+
+<section class="itinerary" id="plan"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">1 DAY TRIP</div><h2>ตัวอย่างทริป 1 วัน</h2><p>เส้นทางสบาย ๆ สำหรับคนอยากเก็บไฮไลต์หลักของบางกระเจ้า</p></div>
+  <div class="days">
+    <div class="day"><h3>09:00 — เริ่มจากเรือ</h3><p>ข้ามเรือเข้าสู่บางกระเจ้า → วัดบางน้ำผึ้งนอก → เช่าจักรยาน</p></div>
+    <div class="day"><h3>10:30 — ธรรมชาติ</h3><p>ปั่นเข้าสวนศรีนครเขื่อนขันธ์ เดินสะพานไม้ ชมหอดูนก และพักใต้ร่มไม้</p></div>
+    <div class="day"><h3>12:30 — ตลาด</h3><p>ไปตลาดน้ำบางน้ำผึ้ง กินอาหารท้องถิ่น ซื้อของฝาก และพักกลางวัน</p></div>
+    <div class="day"><h3>14:30 — สายศรัทธา</h3><p>แวะมหาเทวลัยพระพิฆเนศ ชมสถานที่และสักการะตามความเชื่อส่วนบุคคล</p></div>
+    <div class="day"><h3>15:00 — บ้านกลางสวน</h3><p>แวะบ้านกลางสวน บางกอบัว พักผ่อนในบรรยากาศสวน และเลือกทำกิจกรรมชุมชนหรือล่องเรือชมคลองแพ</p></div>
+    <div class="day"><h3>16:00 — ปั่นชิล</h3><p>ปั่นชมชุมชนและคลอง แวะคาเฟ่หรือจุดพักระหว่างทาง</p></div>
+    <div class="day"><h3>17:30 — กลับฝั่ง</h3><p>คืนจักรยานและเดินทางกลับด้วยเรือหรือเส้นทางที่สะดวก</p></div>
+  </div>
+</div></section>
+
+<section class="sources"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">IMAGE & INFORMATION SOURCES</div><h2>แหล่งข้อมูล</h2><p>ภาพในเว็บเป็นภาพจริงจากแหล่งออนไลน์ โดยภาพจาก Wikimedia Commons มีข้อมูลใบอนุญาตระบุไว้บนหน้าภาพ</p></div>
+  <div class="source-list">
+    <div class="source">🌳 สวนศรีนครเขื่อนขันธ์ — <a href="https://www.travelthaiblog.com/2020/01/SriNakhonKhueanKhanPark.html" target="_blank">TravelThaiBlog</a></div>
+    <div class="source">🥥 ตลาดน้ำ — <a href="https://commons.wikimedia.org/wiki/File:Bang_Nam_Phueng,_Phra_Pradaeng_District,_Samut_Prakan,_Thailand_-_panoramio_(2).jpg" target="_blank">Wikimedia Commons</a></div>
+    <div class="source">🛕 วัดบางน้ำผึ้งนอก — <a href="https://commons.wikimedia.org/wiki/File:Wat_Bang_Nam_Phueng_Nok_3.jpg" target="_blank">Wikimedia Commons</a></div>
+    <div class="source">⛴️ วัดคลองเตยนอก — <a href="https://commons.wikimedia.org/wiki/File:Wat_Khlong_Toei_Nok_01.JPG" target="_blank">Wikimedia Commons</a></div>
+    <div class="source">🕉️ มหาเทวลัยพระพิฆเนศ — <a href="https://creator.kapook.com/gallery/267626/" target="_blank">Kapook Creator</a> (ควรตรวจสอบสิทธิ์ภาพก่อนนำไปเผยแพร่สาธารณะ)</div>
+    <div class="source">🗺️ ข้อมูลการเดินทาง — <a href="https://travel.samutprakan.go.th/" target="_blank">ท่องเที่ยวจังหวัดสมุทรปราการ</a></div>
+  </div>
+</div></section>
+
+<footer><div class="footer-grid"><div><b>🌿 BANG KRACHAO</b><br>เว็บไซต์แนะนำการท่องเที่ยวบางกระเจ้า สมุทรปราการ</div><div class="credit">เว็บไซต์จัดทำเพื่อการศึกษา • ข้อมูลเวลาเปิด–ปิด ค่าโดยสาร และบริการต่าง ๆ อาจเปลี่ยนแปลง ควรตรวจสอบกับสถานที่ก่อนเดินทาง</div></div></footer>
+<script>
+const nav=document.getElementById('nav');window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40));
+</script>
+</body>
+</html>
